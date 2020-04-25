@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { FaPizzaSlice } from 'react-icons/fa';
 import { AddTask } from '../AddTask';
+import { LoginPage } from '../LoginPage';
 
 export const Header = ({ darkMode, setDarkMode }) => {
     const [shouldShowMain, setShouldShowMain] = useState(false);
@@ -14,6 +15,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 </div> 
                 <div className="settings">
                     <ul>
+                      <li><LoginPage/></li>
                       <li 
                         data-testid="quick-add-task-action"
                         className="settings__add"
